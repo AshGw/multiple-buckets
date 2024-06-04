@@ -1,9 +1,16 @@
+### Setup 
+Tf version 1.3+.
+use [`tfenv`](https://github.com/tfutils/tfenv)
+
+```
+tfenv install 1.3.0
+```
 ### Usage
 
 1) Have your AWS crendentials in `~/.aws/credentails` or ``export`` vars
 > Credentials must have the minimum permissions needed to setup a simple S3 bucket
 
-2) That's it, name your buckets inside `./buckets/variables.tf`
+2) That's it, name your buckets inside `./buckets/variables.tf` and optionally configure your AWS region inside `./variables.tf`
 3) Run 
 ```
 terraform plan 
