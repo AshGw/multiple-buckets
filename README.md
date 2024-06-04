@@ -13,8 +13,10 @@ tfenv install 1.3.0
 2) That's it, name your buckets inside `./buckets/variables.tf` and optionally configure your AWS region inside `./variables.tf`
 3) Run 
 ```
-terraform plan 
-terraform apply 
+alias tf="terraform"
+```
+```
+tf init && tf plan && tf apply 
 ```
   
 ### State
